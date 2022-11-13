@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.h2 {
+    color: #fe0020;
+}
+
+/*for complex*/
+.hide {
+    display: none !important;
+}
+.shadow {
+    box-shadow: -50px 0px 0px 30px #ea580c;
+}
