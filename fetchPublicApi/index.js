@@ -8,11 +8,9 @@ window.addEventListener("resize", function() {
     if (screen.width <= 768) {
       shadow.classList.remove("shadow")
       navigation.classList.remove("hide")
-      console.log("shadow")
     } else if (screen.width >= 768) {
       navigation.classList.remove("hide")
       shadow.classList.add("shadow")
-      console.log("in")
     }
 })
 
@@ -25,6 +23,9 @@ const images = document.querySelectorAll(".images")
 images.forEach((e) => {
   fetch("https://aws.random.cat/meow")
   .then(res => res.json())
-  .then(data => {e.innerHTML = `<img src=${data.file} alt="random cat" w-full h-full />`})
+  .then(data => {
+    console.log(data.file.width)
+    e.innerHTML = `<img src=${data.file} alt="random cat" class="object-cover w-full h-full" />`
+  })
 });
 // const randomImg = Math.floor(Math.random() * 100)
