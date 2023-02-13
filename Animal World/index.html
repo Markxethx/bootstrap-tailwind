@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Animals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet"/>
+    <link href="custom.css" rel="stylesheet">
+    <link href="bootstrap.scss" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34b9716bbe.js" crossorigin="anonymous"></script>
+    <meta name="color-scheme" content="dark" />
+
+  </head>
+<body id="body">
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">All About Animals</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Group
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#vertibrates">Vertibrates</a></li>
+                  <li><a class="dropdown-item" href="#invertibrates">Invertibrates</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Class
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#mammals">Mammals</a></li>
+                  <li><a class="dropdown-item" href="#fish">Fish</a></li>
+                  <li><a class="dropdown-item" href="#birds">Birds</a></li>
+                  <li><a class="dropdown-item" href="#reptiles">Reptiles</a></li>
+                  <li><a class="dropdown-item" href="#amphibians">Amphibians</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Type
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#herbivorse">Herbivore</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#omnivorse">Omnivorse</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#carnivorse">Carnivores</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <!--Carousel-->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/group-portrait-adorable-puppies.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-secondary">Adorable Puppies</h5>
+              <p class="text-secondary">A known animal for a Man's Best Friend</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/olivebacked-sunbirds-feeding-child-cinnyris-jugularis.jpg" class="d-block h-100 w-100" alt="...">
+            <div class="carousel-caption d-none d-sm-block">
+              <h5>Olivebacked Sunbirds</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/beautiful-color-mandarin-fish.jpg" class="d-block h-80 w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mandarin Fish</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!--About-->
+      <section id="about" class="bg-light text-dark text-center p-5 p-lg-0 pt-lg-5 text-sm-start mb-4">
+        <div class="container">
+             <div class="d-lg-flex align-items-center justify-content-between">
+                <div>
+                    <h1>All About Animals<span class="text-secondary"> Lover | Wild</span></h1>
+                    <p class="lead my-4">Our team is looking for talented people who wants to show case their work either by web developing, designing or photograpy. We provide support and equal oppurtunity for everyone of you. What are you waiting for? Become part of our team!</p>
+                    <button class="btn btn-info btn-lg my-4">Read More</button>
+                </div>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner mb-2">
+                    <div class="carousel-item active">
+                      <img src="images/african-leopard-sitting-tree-looking-around-jungle.jpg" class="d-block w-100 overflow-hidden" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/africa-hippopotamus-amphibius.jpg" class="d-block w-100 overflow-hidden" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/eurasian-wolf-white-winter-habitat-beautiful-winter-forest.jpg" class="d-block w-100 overflow-hidden" alt="...">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+             </div>
+        </div>
+      </section>
+
+
+      <!--Sign Up-->
+
+      <section class="bg-dark text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="px-2 mb-3 mb-md-0">Become a writer! Sign up here.</h3>
+
+                <div class="input-group news-input">
+                    <input type="email" class="form-control" placeholder="Enter Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-info btn-lg btn-custom" type="button" id="button-addon2" >Submit</button>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
+      <div id="vertibrates" class="container text-center mt-5">
+        <h1>
+        Vertebrates
+        </h1>
+        <p>Also called Craniata, any animal of the subphylum Vertebrata, the predominant subphylum of the phylum Chordata. They have backbones, from which they derive their name. The vertebrates are also characterized by a muscular system consisting primarily of bilaterally paired masses and a central nervous system partly enclosed within the backbone. <a href="https://www.britannica.com/animal/vertebrate" target="_blank">Read Article</a></p>
+        <h5>Example:</h5>
+      </div>
+
+
+      <!--Vertibrates Part 1-->
+      <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4"> <!--g means a gap, it can be in a x or y axis-->
+
+              <div class="card col-lg col-md" style="width: 18rem;">
+                <img src="images/halfmoon-betta-fish.jpg" loading="lazy" decoding="async" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Betta Fish</h5>
+                  <p class="card-text">Betta fish are native to Asia, where they live in the shallow water of marshes, ponds, or slow-moving streams.</p>
+                  <a href="https://www.peta.org/features/never-buy-betta-fish-as-pets-how-siamese-fighting-fish-suffer/" target="_blank" class="btn btn-info">Read More</a>
+                </div>
+              </div>
+
+              <div class="card col-lg col-md" style="width: 18rem;">
+                <img src="images/blue-iguana-closeup-wood-blue-iguana-grand-cayman-blue-iguana-cyclura-lewisi-closeup.jpg" loading="lazy" decoding="async" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Blue Iguana</h5>
+                  <p class="card-text">The Blue Iguana once numbered in the tens of thousands but over decades the population was decimated by development, wild animals, vehicular traffic and human population. </p>
+                  <a href="https://nationaltrust.org.ky/our-work/conservation/blue-iguana-conservation/" target="_blank" class="btn btn-info">Read More</a>
+                </div>
+              </div>
+
+              <div class="card col-lg col-md" style="width: 18rem;">
+                <img src="images/drill-monkey-mandrillus-leucophaeus-resting-nature-habitat-area.jpg" loading="lazy" decoding="async" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Monkey Mandrillus</h5>
+                  <p class="card-text">Mandrills are the largest of all monkeys. They are shy and reclusive primates that live only in the rain forests of equatorial Africa.</p>
+                  <a href="https://www.nationalgeographic.com/animals/mammals/facts/mandrill" target="_blank" class="btn btn-info">Read More</a>
+                </div>
+              </div>
+
+        </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!--FAQS-->
+      <div class="container">
+        <h1 class="text-center">
+          Frequently Ask Question About Vertebrates
+        </h1>
+      </div>
+
+
+      <!--Accordion-->
+      <div class="container">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              What Called Vertebrates ?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+                <strong>A vertebrate is an animal that has a backbone and a skeleton.</strong> Vertebrate animals include humans. When you think about vertebrates, think about bones: this word has to do with animals that have a lot of bones, in the form of a skeleton. It especially refers to animals with a backbone, which protects their spinal cord.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              What are the 5 characteristics of vertebrates?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>Vertebrates have five key characteristics that are common to all vertebrates.</strong>
+               <ol>
+                <li>They have a backbone.</li>
+                <li>They have a skull.</li>
+                <li>They have an endoskeleton.</li>
+                <li>They have bilateral symmetry.</li>
+                <li>They have two pairs of appendages.</li>
+               </ol>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              What are the 5 types of Vertibrates?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong>The phylum chordata (animals with backbones) is divided into five common classes:</strong>
+              <ul>
+                <li>Fish</li>
+                <li>Amphibians</li>
+                <li>Reptiles</li>
+                <li>Mammals</li>
+                <li>Birds</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+              Are Humans Vertebrates ?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body">
+                <strong>Humans and all other back-boned animals—plus a few others that have no bone at all—comprise the vertebrates.</strong> Vertebrates are a clade, meaning that all members of the group have evolved from a common ancestor that they all share.
+                 <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjLkuqk9Pj5AhWUOZQKHRrGDVYQFnoECAMQAw&url=https%3A%2F%2Fevolution-outreach.biomedcentral.com%2Farticles%2F10.1007%2Fs12052-009-0134-3&usg=AOvVaw13YN51LaJbJ4LuIph0rVJc" target="_blank">Read More</a> 
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+            <!--VideoVertebrates-->
+      <div class="container my-5">
+        <div class="row">
+          <div class="embed-responsive embed-responsive-16x9 col-md">
+            <iframe class="ratio modal-lg" width="516" height="315" src="https://www.youtube.com/embed/HQdiSMUZEDA"></iframe>
+          </div>
+          <div class="embed-responsive embed-responsive-16x9 col-md">
+            <iframe class="ratio modal-lg" width="516" height="315" src="https://www.youtube.com/embed/qRKoGO7hNXg"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!--Know moreabout Vertibrate-->
+
+      <div class="container mb-5">
+        <div class="d-flex justify-content-center align-item-center">
+        <a href="know-more-vertebrate.html"><button class="btn btn-info"> Know More About Vertibrates </button></a>
+        </div>
+      </div>
+
+      <!--Quote-->
+      <div class="container mb-5 text-center">
+      <div class="card">
+        <div class="card-header">
+          Quote of the Day!
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>THE LOVE FOR ALL LIVING CREATURES IS THE MOST NOBLE ATTRIBUTE OF MAN.</p>
+            <footer class="blockquote-footer">CHARLES DARWIN <cite title="Source Title">best known for his contributions to evolutionary biology.</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+      </div>
+
+      <!--Invertibrates-->
+      <div id="invertibrates" class="bd-dark text-center text-light">
+        <div class=" bg-dark">
+          <div class="column p-4">
+            <h1 class="text-primary">Invertebrates</h1>
+            <p>Any animal that lacks a vertebral column, or backbone, in contrast to the cartilaginous or bony vertebrates. More than 90 percent of all living animal species are invertebrates. Worldwide in distribution, they include animals as diverse as sea stars, sea urchins, earthworms, sponges, jellyfish, lobsters, crabs, insects, spiders, snails, clams, and squid. Invertebrates are especially important as agricultural pests, parasites, or agents for the transmission of parasitic infections to humans and other vertebrates.</p>
+            <a href="https://www.britannica.com/animal/invertebrate"> Read Article</a>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="mt-5 text-center">Example of invertebrate:</h3>
+
+
+      <!--Invertibrates Part 1-->
+      <section>
+        <div class="container p-5">
+            <div class="row text-center g-4"> <!--g means a gap, it can be in a x or y axis-->
+
+              <div class="card col-lg col-md" style="width: 18rem;">
+                <img src="images/selective-focus-shot-housefly.jpg" loading="lazy" decoding="async" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Housefly</h5>
+                  <p class="card-text"> Common insect of the family Muscidae (order Diptera). About 90 percent of all flies occurring in human habitations are houseflies. </p>
+                  <a href="https://www.britannica.com/animal/housefly" target="_blank" class="btn btn-info">Read More</a>
+                </div>
+              </div>
+
+              <div class="card col-lg col-md" style="width: 18rem;">
+                <img src="images/hamorii-tarantula-closeup-wood-hamorii-tarantula-closeup-hamorii-tarantula-front-view.jpg" loading="lazy" decoding="async" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hamorii Tarantula</h5>
+                  <p class="card-text">Definitely one of the “Teddy Bear” tarantulas in the hobby, this species is famous for a reason. Not only is it super-docile, strikingly colored, will probably live longer than you will and a species that many consider handling. </p>
+                  <a href="https://www.mymonsters.co.za/product/brachypelma-hamorii/" target="_blank" class="btn btn-info">Read More</a>
+                </div>
+              </div>
+
+              <div class="card col-lg col-md" style="width: 18rem;">
+                <img src="images/emperor-scorpion-pandinus-imperator-closeup.jpg" loading="lazy" decoding="async" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Emperor Scorpion</h5>
+                  <p class="card-text">Emperor scorpions live predominantly in the hot and humid forests of west Africa.
+
+                    The Zoo features emperor scorpions among its Animal Ambassadors, which are introduced to audiences in education programs on and off grounds.</p>
+                  <a href="https://www.marylandzoo.org/animal/emperor-scorpion/" target="_blank" class="btn btn-info">Read More</a>
+                </div>
+              </div>
+        </div>
+        </div>
+      </section>
+
+
+      <!--FAQS Invertebrates-->
+      <div class="container">
+        <h1 class="text-center">
+          Frequently Ask Question
+        </h1>
+      </div>
+
+      
+      <!--Accordion-->
+      <div class="container my-5">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              What are the 5 most common types of Invertebrates?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              <strong>Within the vast number of Invertebrates, there are 5 main groups that many of them fall under. These include:</strong>
+               <ol>
+                <li><strong>Protozoans</strong> Single-celled organisms such as paramecia, these invertebrates are free-living or can be parasitic. They feed on matter which can be other microorganisms, organic tissues or debris.</li>
+                <li><strong>Annelids</strong> Also known as ringed worms or segmented worms. They are a large phylum, and over 22,000 species of phylum exist which includes earthworms and leeches. They are characterised by their body cavity, moveable bristles, and segmented body.</li>
+                <li><strong>Echinoderms</strong> Marine invertebrates, including sea cucumbers, sea urchins and starfish. They are a very diverse group and have a really important role ecologically for near-shore environments in deep seas.</li>
+                <li><strong>Molluscs</strong> Soft-bodied invertebrates that are usually enclosed in a calcium carbonate shell with a soft mantle covering their body. Organisms that are included within the molluscs type include Snails, octopuses, squid, clams, and scallops</li>
+                <li><strong>Arthropods</strong> Arthropods have 5 main characteristics, these types of invertebrate have Exoskeletons, where their bodies do not have internal bones. They have segmented bodies, internally and externally. Arthropods have jointed appendages, bilateral symmetry and finally, they also have an open circulatory system.</li>
+               </ol>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              What kind of animals are invertebrate?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <strong>Invertebrates range from:</strong>
+              <ul>
+                <li>Centipedes</li>
+                <li>Crustaceans,</li>
+                <li>Insects</li>
+                <li>Horseshoe Crabs</li>
+                <li>Worms</li>
+                <li>Leeches</li>
+                <li>Earth Worms</li>
+                <li>And many more</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+              Do invertebrates have blood?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body">
+              The major difference between insect blood and the blood of vertebrates, including humans, is that vertebrate blood contains red blood cells. Insects and other invertebrates, on the other hand, have what is called hemolympha heterogeneous fluid that courses through their bodies, bathing all the internal tissues.
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!--Video about Invertibrate-->
+      
+      <div class="container">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/rzxFTrktN1c" title="YouTube video" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+      <!--Know moreabout Invertibrate-->
+
+      <div class="container my-5">
+        <div class="d-flex justify-content-center align-item-center">
+        <a href="#"><button class="btn btn-info"> Know More About Invertebrates </button></a>
+        </div>
+      </div>
+
+
+      <!--All about animal Classes-->
+      <div id="mammals" class="bg-dark p-5">
+        <h1 class="text-center text-light">All About the Animal Classes</h1>
+      </div>
+
+      <!--Mammals-->
+      <div class="container text-center text-secondary mt-5">
+      <h1>Mammals</h1>
+      <p>(Class Mammalia), any member of the group of vertebrate animals in which the young are nourished with milk from special mammary glands of the mother. In addition to these characteristic milk glands, mammals are distinguished by several other unique features. Hair is a typical mammalian feature, although in many whales it has disappeared except in the fetal stage.</p>
+      <a  href="https://www.britannica.com/animal/mammal" target="_blank">Read full documentation</a>
+      </div>
+      <!--Class Images-->
+      <div class="container mt-3 ml-4">
+        <div class="row">
+          <div class="column">
+            <img class="rounded img-fluid" src="images/pexels-elliot-connor-12914828.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-nandhu-kumar-351970.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-pixabay-59840.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-nancy-guth-850602.jpg" loading="lazy" decoding="async" alt="">
+            
+          </div>
+
+          <div class="column">
+            <img class="rounded img-fluid" src="images/pexels-jolene-qually-4255856 (1).jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-hamid-elbaz-225869.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-thomas-b-814898.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-peng-louis-1643456.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-scott-webb-1093126.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-pixabay-460956.jpg" loading="lazy" decoding="async" alt="">
+          </div>
+
+          <div class="column">
+            <img class="rounded img-fluid" src="images/pexels-patrice-schoefolt-3749012.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-vishnudeep-dixit-1260803.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-mike-b-97824.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-taryn-elliott-9085050.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-taryn-elliott-6405703.jpg" loading="lazy" decoding="async" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <!--Fish-->
+      <div id="fish" class="container text-center text-secondary mt-5">
+        <div class="container text-center text-secondary mt-5">
+          <h1>Fish</h1>
+          <p>Any of approximately 34,000 species of vertebrate animals (phylum Chordata) found in the fresh and salt waters of the world. Living species range from the primitive jawless lampreys and hagfishes through the cartilaginous sharks, skates, and rays to the abundant and diverse bony fishes. Most fish species are cold-blooded; however, one species, the opah (Lampris guttatus), is warm-blooded.</p>
+          <a  href="https://www.britannica.com/animal/fish" target="_blank">Read full documentation</a>
+      </div>
+      </div>
+
+      
+      <!--Class Images-->
+      <div class="container mt-3 ml-4">
+        <div class="row">
+          <div class="column">
+            <img class="rounded img-fluid" src="images/pexels-ben-phillips-4781926.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-jeffry-surianto-8856048.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-egor-kamelev-7987532.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-wewe-yang-4850960.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-francesco-ungaro-3172277.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-diego-sandoval-4766972.jpg" loading="lazy" decoding="async" alt="">
+          </div>
+
+          <div class="column">
+            <img class="rounded img-fluid" src="images/pexels-jeffry-surianto-9004398.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-valdemaras-d-1700731.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-oleksandr-pidvalnyi-12861712.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-pia-3113229.jpg" loading="lazy" decoding="async" alt="">
+            
+          </div>
+
+          <div class="column">
+            <img class="rounded img-fluid" src="images/pexels-mohan-nannapaneni-6265949.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-kabita-darlami-5692135.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-chait-goli-4365561.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-gezer-amorim-2293628.jpg" loading="lazy" decoding="async" alt="">
+            <img class="rounded img-fluid" src="images/pexels-vova-krasilnikov-2599869.jpg" loading="lazy" decoding="async" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <!--Birds-->
+      <div id="birds" class="container text-center text-secondary mt-5">
+        <div class="container text-center text-secondary mt-5">
+          <h1>Bird</h1>
+          <p>(Class Aves), any of the more than 10,400 living species unique in having feathers, the major characteristic that distinguishes them from all other animals. A more-elaborate definition would note that they are warm-blooded vertebrates more related to reptiles than to mammals and that they have a four-chambered heart (as do mammals), forelimbs modified into wings (a trait shared with bats), a hard-shelled egg, and keen vision, the major sense they rely on for information about the environment. Their sense of smell is not highly developed, and auditory range is limited. Most birds are diurnal in habit. More than 1,000 extinct species have been identified from fossil remains.</p>
+          <a  href="https://www.britannica.com/animal/bird-animal" target="_blank">Read full documentation</a>
+      </div>
+      </div>
+      <!--Class Images-->
+      <div class="container mt-3 ml-4">
+        <div class="row">
+          <div class="column">
+            <img loading="lazy" decoding="async" src="images/pexels-pixabay-45853.jpg" loading="lazy" decoding="async" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-daniyal-ghanavati-110812.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-pixabay-37833.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-pixabay-36846.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-couleur-2317904.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-pixabay-54462 (2).jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-frans-van-heerden-2253393.jpg" loading="lazy" decoding="async" alt="">
+          </div>
+
+          <div class="column">
+            <img src="images/pexels-marko-blazevic-1327405.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-pixabay-349758.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-sivakumar-b-97533.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-pixabay-46166.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-pixabay-86596.jpg" allowfullscreen loading="lazy" decoding="async" alt="">
+          </div>
+
+          <div class="column">
+            <img src="images/pexels-james-frid-2569232.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-pixabay-45851.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-carlos-spitzer-17811.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-pixabay-206676.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-mark-broadhurst-105804.jpg" loading="lazy" decoding="async" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <!--Reptiles-->
+      <div id="reptiles" class="container text-center text-secondary mt-5">
+        <div class="container text-center text-secondary mt-5">
+          <h1>Reptile</h1>
+          <p>Reptilian classification is highly mutable. Changes in group names and composition occur every few months. These changes derive from the discovery of new fossils, new data sets, new phylogenetic analytical techniques, and different taxonomic philosophies. Furthermore, many biologists are abandoning the use of group titles (such as class and order) in favour of an indented hierarchical arrangement that reflects the phylogenetic branching pattern.</p>
+          <a  href="https://www.britannica.com/animal/reptile/Annotated-classification" target="_blank">Read full documentation</a>
+      </div>
+      </div>
+      <!--Class Images-->
+      <div class="container mt-3 ml-4">
+        <div class="row">
+          <div class="column">
+            <img src="images/pexels-will-mu-3895253.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-pixabay-34426.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-řãhùĺ-kùmäř-3665172.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-3732501.jpeg" laoding="lazy" decoding="async" alt="">
+            
+          </div>
+
+          <div class="column">
+            <img src="images/pexels-mehmet-turgut-kirkgoz-12220855.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-egor-kamelev-751689.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-david-dibert-2613148.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-erik-karits-10154450.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-pixabay-70083.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-2078809.jpeg" loading="lazy" deceding="async" alt="">
+          </div>
+
+          <div class="column">
+            <img src="images/pexels-pixabay-62289.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-dimitri-dim-1802177.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-jeffry-surianto-11170559.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-3281127.jpeg" loading="lazy" decoding="async" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <!--Amphibians-->
+      <div id="amphibians" class="container text-center text-secondary mt-5">
+        <div class="container text-center text-secondary mt-5">
+          <h1>Amphibians</h1>
+          <p>Class Amphibia, any member of the group of vertebrate animals characterized by their ability to exploit both aquatic and terrestrial habitats. The name amphibian, derived from the Greek amphibios meaning “living a double life,” reflects this dual life strategy—though some species are permanent land dwellers, while other species have a completely aquatic mode of existence.</p>
+          <a  href="https://www.britannica.com/animal/amphibian" target="_blank">Read full documentation</a>
+      </div>
+      </div>
+      <!--Class Images-->
+      <div class="container mt-3 ml-4">
+        <div class="row">
+          <div class="column">
+            <img src="images/pexels-photo-11575310.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-674318.jpeg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-638689.jpeg" loading="lazy" decoding="async" alt="">
+
+            
+          </div>
+
+          <div class="column">
+            <img src="images/pexels-photo-12569707.jpeg" loading="lazy" deceding="async" alt="">
+            <img src="images/pexels-photo-326116.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-1046494.jpg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-2168831.jpeg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-3180755.jpeg" loading="lazy" decoding="async" alt="">
+          </div>
+
+          <div class="column">
+            <img src="images/pexels-photo-2092041.jpeg" laoding="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-1136925.jpeg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-1888839.jpeg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-753256.jpeg" loading="lazy" decoding="async" alt="">
+            <img src="images/pexels-photo-262344.jpg" loading="lazy" decoding="async" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="alert alert-light my-5 text-center" role="alert">
+        Hi, i am The Blank.eth! Hope you're having a great day! <i class="fa-solid fa-robot"></i>
+      </div>
+
+
+      <!--Herbivorse-->
+      <div class="container mb-5">
+      <div id="herbivorse" class="row g-0 bg-light position-relative text-start">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="images/pexels-photo-8190673.jpeg" class="w-100" alt="...">
+        </div>
+        <div class="col-md-6 p-4 ps-md-0">
+          <h5 class="mt-0">Herbivores</h5>
+          <p class="text-start">An herbivore is an organism that mostly feeds on plants. Herbivores range in size from tiny insects such as aphids to large, lumbering elephants. Herbivores are a major part of the food web, a description of which organisms eat other organisms in the wild. Organisms in the food web are grouped into trophic, or nutritional, levels. There are three trophic levels. Autotrophs, organisms that produce their own food, are the first trophic level. These include plants and algae. Herbivores, which eat autotrophs, are the second trophic level. Carnivores, organisms that consume animals, and omnivores, organisms that consume both plants and animals, are the third trophic level.</p>
+          <a href="https://education.nationalgeographic.org/resource/herbivore" target="_blank" class="stretched-link">Read National Geography</a>
+        </div>
+      </div>
+      </div>
+
+
+      <!--Omnivorse-->
+      <div class="container mb-5">
+      <div id="omnivorse" class="row g-0 bg-light position-relative text-start">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="images/kodiak-brown-bear-adult-portrait-wildlife-158109.jpeg" class="w-100" alt="...">
+        </div>
+        <div class="col-md-6 p-4 ps-md-0">
+          <h5 class="mt-0">Omnivores</h5>
+          <p class="text-start">An omnivore is an organism that eats plants and animals. The term stems from the Latin words omnis, meaning “all or everything,” and vorare, meaning “to devour or eat.”
+
+            Omnivores play an important part of the food chain, a sequence of organisms that produce energy and nutrients for other organisms. Every food chain consists of several trophic levels, which describe an organism’s role in an ecosystem. Omnivores generally occupy the third trophic level alongside meat-eating carnivores.
+            
+            Omnivores are a diverse group of animals. Examples of omnivores include bears, birds, dogs, raccoons, foxes, certain insects, and even humans.</p>
+          <a href="https://education.nationalgeographic.org/resource/omnivores" target="_blank" class="stretched-link">Read National Geography</a>
+        </div>
+      </div>
+      </div>
+
+      <!--Carnivorse-->
+      <div class="container mb-5">
+      <div id="carnivorse" class="row g-0 bg-light position-relative text-start">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <img src="images/pexels-photo-792381.jpeg" class="w-100" alt="...">
+        </div>
+        <div class="col-md-6 p-4 ps-md-0">
+          <h5 class="mt-0">Carnivorse</h5>
+          <p class="text-start">A carnivore is an organism, in most cases an animal, that eats meat. A carnivorous animal that hunts other animals is called a predator; an animal that is hunted is called prey.
+
+            An animal’s diet determines where it falls on the food chain, a sequence of organisms that provide energy and nutrients for other organisms. Each food chain consists of several trophic levels, which describe an organism’s role in an ecosystem. Carnivores and omnivores occupy the third trophic level. An omnivore, such as a human, is an organism that eats plants and animals.
+            Many carnivores get their energy and nutrients by eating herbivores, omnivores, and other carnivores. The animals that eat secondary consumers, like owls that eat rodents, are known as tertiary consumers. Carnivores that have no natural predators are known as apex predators; they occupy the top of the food chain.</p>
+          <a href="https://education.nationalgeographic.org/resource/carnivore" target="_blank" class="stretched-link">Read National Geography</a>
+        </div>
+      </div>
+      </div>
+
+      <!--About the authors-->
+      <div class="container bg-light my-5">
+        <div class="text-center p-4">
+        <h5>Enjoy my Website? Have me a feedback!</h5>
+        <p>Don't worry there is no data base here that will store your information! It's not working for now!</p>
+        </div>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Dito lang sa tabi">
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Boss Mapagmahal 143">
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Cavite</option>
+            <option>Palawan</option>
+            <option>Mindanao</option>
+            <option>Caloocan</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+      </div>
+
+
+      <!--Comment-->
+      <div class="container mb-5">
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Leave me a message Here!</label>
+      </div>
+    </div>
+
+      <!--Have project in mind?-->
+
+
+        <div class="bg-dark p-5 text-center hire">
+          <h1 class="text-center text-light mb-4 hireme">Have Project in mind?</h1>
+          <a href="https://www.facebook.com/messages/t/100004571916682" target="_blank"><button type="button" class="btn btn-secondary mb-4 btn-lg">Hire Me</button></a>
+          <p class="text-light">Copyright &copy; 2022 The Blank.eth </p>
+        </div>
+      <!--footer-->
+
+      <a href="#body"><i class="fa-solid fa-circle-arrow-up top-btn" id="logo"></i></a>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
